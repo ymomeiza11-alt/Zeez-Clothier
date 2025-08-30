@@ -1,0 +1,6 @@
+Order deny,allow
+Deny from all
+<Files paystack.php>
+    Allow from localhost
+    # Allow from your server IP if needed
+</Files>

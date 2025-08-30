@@ -1,0 +1,628 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+h2{
+    font-size: 1.9rem;
+    font-weight: 350;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-weight: 250;
+}
+
+h5 {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+h6 {
+    color: #8d8d8d;
+}
+
+button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    transition: background-color 0.4s ease, color 0.4s ease;
+    cursor: pointer;
+    padding: 1rem 3rem;
+    margin: 10px 0;
+}
+
+button:hover {
+    background-color: coral;
+    color: #fff;
+}
+
+hr {
+    width: 50px;
+    height: 3px;
+    background: coral ;
+    border: none;
+    margin: 24px auto 32px auto;
+    opacity: 0.85;
+    box-shadow: 0 2px 8px rgba(255, 127, 80, 0.15);
+    transition: background 0.3s;
+}
+
+.navbar{
+    font-size: 16px;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+    top: 0;
+    left: 0;
+    box-shadow: 0 5px 10px rgba(75, 70, 70, 0.1);
+    align-items: center;
+}
+
+.nav-buttons{
+    margin-left: 50%;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    padding: 0 20px;
+    color: #000;
+    transition: 0.4s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-link.active
+.navbar i:hover {
+    color: coral;
+}
+
+.navbar i {
+    font-size: 1.1rem;
+    padding: 0 0.2px;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+.navbar .i-resize{
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .nav-buttons {
+        margin: 10px;
+    }
+    .nav-buttons ul {
+        margin: 1rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .nav-buttons ul .fas {
+        margin: 20px 5px 10px 20px;
+    }
+    
+}
+
+#home{
+    position: relative;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../imgs/53BB2422-176C-4255-BF41-CD43EF17262C.PNG");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #fff;
+}
+
+#home h1 {
+    color: coral;
+}
+
+#new .one img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#new .one {
+    position: relative;
+}
+
+#new .one .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: burlywood;
+    font-weight: bold;
+    transition: 0.4s ease;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(1, 1, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#new .one .details:hover {
+    background-color: darkgoldenrod;
+}
+
+
+
+.card-img {
+    aspect-ratio: 4 / 5;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: block;
+    object-fit: cover;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.product {
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.product img{
+    transition: 0.3s all;
+}
+
+.product:hover img {
+    opacity: 0.7;
+}
+
+.banner-container {
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    height: 50vh;
+    max-height: 600px;
+    background-image: url("../imgs/249F13A7-15F6-47F7-8C4D-3E3FAD3D5B2C.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+.banner-content {
+    padding: 2rem;
+    max-width: 800px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.star {
+    color: #f5c518;
+}
+
+.custom-footer,
+.custom-footer h5,
+.custom-footer p,
+.custom-footer li,
+.custom-footer .footer-link,
+.custom-footer .footer-text,
+.custom-footer i {
+    color: grey !important;
+    transition: color 0.2s;
+}
+
+.custom-footer .footer-link:hover,
+.custom-footer .footer-text:hover,
+.custom-footer i:hover,
+.custom-footer h5:hover,
+.custom-footer p:hover,
+.custom-footer li:hover {
+    color: coral !important;
+}
+
+.padding-ex {
+    padding-top: 7rem;
+}
+
+.pagination {
+    text-align: center;
+}
+
+.pagination a {
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination a.active {
+    background-color: coral;
+    color: white;
+    border-radius: 5px;
+}
+
+.pagination a:hover {
+    background-color: coral;
+    color: white;
+}
+
+.small-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.small-img-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+.view-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.view-product input:focus{
+    outline: none;
+}
+
+.view-product .buy-btn {
+    background-color: coral;
+    color: white;
+    opacity: 1;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.4s all;
+}
+
+.view-product .buy-btn:hover {
+    background-color: black;
+}
+
+/* // Cart Page */
+
+.cart {
+    margin-top: 100px;
+}
+
+.cart table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart .cart-product {
+    display: flex;
+    align-items: center;
+}
+
+.cart td {
+    padding: 10px 20px;
+}
+
+.cart th {
+    text-align: left;
+    background-color: coral;
+    color: white;
+    padding: 5px 10px;
+}
+
+.cart-product img {
+    width: 80px;
+    height: 90px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.cart-qty {
+    width: 40px;
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+}
+.cart-qty:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.cart-total {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cart-total table {
+    width: 100%;
+    max-width: 500px;
+    border-top: 3px solid coral;
+}
+
+td:last-child{
+    text-align: right;
+}
+
+th:last-child {
+    text-align: right;
+}
+
+.checkout-con{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.checkout-btn {
+    display: flex;
+    justify-content: flex-end;
+    background-color: coral;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.remove-btn {
+    color: red;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: transparent;
+    border: none
+}
+
+.edit-btn {
+    color: coral;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+}
+
+/* Login */
+#login-form {
+    width: 50%;
+    margin: 5px auto;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid coral;
+}
+
+#login-form input {
+    width: 50%;
+    margin: 5px auto;
+    border: 1px solid #ccc;
+}
+
+#login-form #login-btn {
+    width: 50%;
+    padding: 10px;
+    background-color: coral;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#login-form #login-btn:hover {
+    background-color: black;
+}
+
+#login-form #signup-link {
+    color: coral;
+    border: none;
+    cursor: pointer;
+}
+
+/* sign-up */
+
+#signup-form {
+    width: 50%;
+    margin: 5px auto;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid coral;
+}
+
+#signup-form input {
+    width: 50%;
+    margin: 5px auto;
+    border: 1px solid #ccc;
+}
+
+#signup-form #signup-btn {
+    width: 50%;
+    padding: 10px;
+    background-color: coral;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#signup-form #signup-btn:hover {
+    background-color: black;
+}
+
+#signup-form #login-link {
+    color: coral;
+    border: none;
+    cursor: pointer;
+}
+
+/* Account */
+#account-form {
+    width: 50%;
+    margin: 35px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+#account-form input {
+    margin: 5px auto;
+}
+
+#account-form #change-password-btn {
+    background-color: coral;
+    color: white;
+}
+
+.account-info #Order-btn,#Logout-btn {
+    color: coral;
+    text-decoration: none;
+}
+
+/* Checkout */
+#checkout-form .checkout-sm-element{
+    display: inline-block;
+    width: 48%;
+    margin: 10px auto;
+}
+
+#checkout-form .checkout-lg-element {
+    width: 96.5%;
+}
+
+#checkout-form .checkout-btn-container {
+    text-align: right;
+    margin: 10px;
+    margin-right: 40px;
+}
+
+#checkout-form #checkout-btn {
+    background-color: coral;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact span{
+    color: coral;
+}
+
+.orders th {
+    background-color: coral;
+    color: white;
+    padding: 5px 10px;
+}
+
+.orders td {
+    padding: 10px 20px;
+}
+
+.orders td img{
+    width: 80px;
+    height: 90px;
+    margin-right: 10px;
+}
+
+.orders .orderdetails-btn{
+    color: white;
+    background-color: coral;
+}
+
+.about-us-image{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 100%;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+
+.cart-qtyy{
+    background-color: coral;
+    color: white;
+    padding: 1px 6px;
+    border-radius: 50%;
+    margin: -5px;
+    font-size: 0.8rem;
+    position: absolute;
+}
+
+.payment-method {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+}
+
+.payment-method .form-check {
+    margin-bottom: 10px;
+}
+
+.text-muted {
+    opacity: 0.7;
+}
+
+
+.bi-bag {
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.badge {
+    font-size: 0.6rem;
+    padding: 0.35em 0.5em;
+}
+
+.btn-btn{
+    background-color: coral;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-btn:hover{
+    background-color: transparent;
+    color: coral;
+    border: 1px solid coral;
+}
